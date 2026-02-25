@@ -1,52 +1,37 @@
-# E-commerce Revenue Analysis 📊
+# Olist E-Commerce Analysis 📊
 
-## Project Overview
-This project performs an end-to-end analysis of an e-commerce dataset to understand:
-- How revenue is distributed across product categories
-- Which categories contribute the most to total revenue
-- Business insights that can help improve sales strategy
+## Overview
+End-to-end exploratory analysis of 100,000+ real orders from Brazil's 
+largest e-commerce platform, using Python across 6 relational datasets.
 
-The analysis is done using Python and Pandas on a real-world Brazilian e-commerce dataset (Olist).
+## Analysis Areas
+- **Revenue** — Top categories and states by sales
+- **Customer Behavior** — Retention and repeat purchase patterns  
+- **Delivery Performance** — On-time vs late delivery breakdown by state
+- **Payment Trends** — Payment methods and installment usage
+- **Customer Satisfaction** — What drives high and low review scores
 
----
+## Key Findings
+- 📦 Late deliveries drop review scores by **1.66 points** (4.21 → 2.55 / 5)
+- 🗺️ São Paulo alone drives **~40% of total revenue**
+- 🔁 **97% of customers never return** — retention is the biggest growth gap
+- 💳 **75%+ of transactions** use credit card installment plans
+- 📈 Revenue grew steadily through 2017–2018, peaking May 2018
 
-## Dataset Used
-- Orders
-- Order Items
-- Products
-- Product Category Translation
+## Tools
+Python · Pandas · Matplotlib · Seaborn · Jupyter Notebook
 
-(Source: Olist E-commerce Dataset)
+## Dataset
+[Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce) (Kaggle)
 
----
+## How to Run
+1. Clone this repository
+2. Download the dataset from Kaggle and place all CSVs in the project folder
+3. Install dependencies:
+```bash
+   pip install pandas matplotlib seaborn
+```
+4. Open and run `olist_ecommerce_analysis.ipynb` top to bottom
 
-## Tools & Technologies
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Jupyter Notebook
-
----
-
-## Key Analysis Performed
-- Data cleaning and merging multiple datasets
-- Revenue calculation using order price data
-- Revenue contribution by product category
-- Percentage share of revenue by category
-- Identification of top revenue-generating categories
-
----
-
-## Key Insights
-- A small number of product categories contribute a large portion of total revenue
-- Categories like **Health & Beauty**, **Watches & Gifts**, and **Bed Bath & Table** generate the highest revenue
-- This insight can help businesses focus marketing and inventory strategies on high-impact categories
-
----
-
-## How to Run the Project
-1. Clone the repository
-2. Install required libraries:
-   ```bash
-   pip install pandas numpy matplotlib
+## Author
+Nensi Gondaliya
